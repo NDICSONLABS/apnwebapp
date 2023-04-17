@@ -1,13 +1,13 @@
 
   (function ($) {
-
+  
   "use strict";
 
     // COUNTER NUMBERS
     jQuery('.counter-thumb').appear(function() {
       jQuery('.counter-number').countTo();
     });
-
+    
     // CUSTOM LINK
     $('.smoothscroll').click(function(){
     var el = $(this).attr('href');
@@ -27,7 +27,7 @@
       }, 300);
     }
 });
-
+    
   })(window.jQuery);
 
 
