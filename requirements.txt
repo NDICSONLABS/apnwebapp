@@ -1,6 +1,7 @@
 Django>=4.1,<4.2
 wagtail>=4.2,<4.3
 psycopg2-binary
-django-environ 
+django-environ
+django_extensions
 dj-database-url
 gunicorn

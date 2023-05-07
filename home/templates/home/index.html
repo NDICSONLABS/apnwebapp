@@ -1,4 +1,4 @@
-{% load static i18n wagtailcore_tags %}
+{% load static i18n wagtailcore_tags wagtailimages_tags %}
         <header class="site-header">
             <div class="container">
                 <div class="row">
@@ -45,60 +45,69 @@
                 </div>
             </div>
         </header>
+{% include 'menus/navbar.html' %}
+<!--        <nav class="navbar navbar-expand-lg bg-light shadow-lg">-->
+<!--            <div class="container">-->
+<!--                <a class="navbar-brand" href="/">-->
+<!--                    <img src="{% static 'images/apnlogo.ico' %}" class="logo img-fluid" alt="Agape Partner Network">-->
+<!--&lt;!&ndash;                    <span>&ndash;&gt;-->
+<!--&lt;!&ndash;                        Agape Partners Network&ndash;&gt;-->
+<!--&lt;!&ndash;                        <small>Sharing Love to a World in Need</small>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </span>&ndash;&gt;-->
+<!--                </a>-->
 
-        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="{% static 'images/logo.png' %}" class="logo img-fluid" alt="Agape Partner Network">
-                    <span>
-                        Agape Partners Network
-                        <small>Sharing Love to a World in Need</small>
-                    </span>
-                </a>
+<!--                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                    <span class="navbar-toggler-icon"></span>-->
+<!--                </button>-->
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<!--                <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--                    <ul class="navbar-nav ms-auto">-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link click-scroll" href="#top">Home</a>-->
+<!--                        </li>-->
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#top">Home</a>
-                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link click-scroll" href="#section_2">About</a>-->
+<!--                        </li>-->
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
-                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link click-scroll" href="#section_3">Services</a>-->
+<!--                        </li>-->
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Services</a>
-                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link click-scroll" href="#section_4">Volunteer</a>-->
+<!--                        </li>-->
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Volunteer</a>
-                        </li>
+<!--                        <li class="nav-item dropdown">-->
+<!--                            <a class="nav-link click-scroll dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">News & Event</a>-->
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link click-scroll dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">News & Event</a>
+<!--                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">-->
+<!--                                <li><a class="dropdown-item" href="news.html">Our newsletters</a></li>-->
+<!--                                <li><a class="dropdown-item" href="past-events.html">Past Events</a></li>-->
+<!--                                <li><a class="dropdown-item" href="upcoming-events.html">Upcoming Events</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item dropdown">-->
+<!--                            <a class="nav-link click-scroll dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">News & Event</a>-->
 
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="news.html">Our newsletters</a></li>
-                                <li><a class="dropdown-item" href="past-events.html">Past Events</a></li>
-                                <li><a class="dropdown-item" href="upcoming-events.html">Upcoming Events</a></li>
-                            </ul>
-                        </li>
+<!--                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">-->
+<!--                                <li><a class="dropdown-item" href="news.html">Our newsletters</a></li>-->
+<!--                                <li><a class="dropdown-item" href="past-events.html">Past Events</a></li>-->
+<!--                                <li><a class="dropdown-item" href="upcoming-events.html">Upcoming Events</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_6">Contact</a>
-                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link click-scroll" href="#section_6">Contact</a>-->
+<!--                        </li>-->
 
-                        <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<!--                        <li class="nav-item ms-3">-->
+<!--                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </nav>-->
 
         <main>
 
@@ -109,36 +118,39 @@
                         <div class="col-lg-12 col-12 p-0">
                             <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="{% static 'images/slide/volunteer-helping-with-donation-box.jpg' %}" class="carousel-image img-fluid" alt="...">
+                                    {% for carousel_image in self.carousel.all %}
+                                    {% image carousel_image.image fill-1920x1184 as img %}
+                                    <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}">
+                                        <img src="{{img.url}}" class="carousel-image img-fluid" alt="{{img.alt}}">
                                         
                                         <div class="carousel-caption d-flex flex-column justify-content-end">
-                                            <h1>be a Kind Heart</h1>
+                                            <h1>{{carousel_image.title}}</h1>
                                             
-                                            <p>Professional charity theme based on Bootstrap 5.2.2</p>
+                                            <p>{{carousel_image.sub_title}}</p>
                                         </div>
                                     </div>
+                                    {% endfor %}
 
-                                    <div class="carousel-item">
-                                        <img src="{% static 'images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg' %}" class="carousel-image img-fluid" alt="...">
-                                        
-                                        <div class="carousel-caption d-flex flex-column justify-content-end">
-                                            <h1>Non-profit</h1>
-                                            
-                                            <p>You can support us to grow more</p>
-                                        </div>
-                                    </div>
+<!--                                    <div class="carousel-item">-->
+<!--                                        <img src="{% static 'images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg' %}" class="carousel-image img-fluid" alt="...">-->
+<!--                                        -->
+<!--                                        <div class="carousel-caption d-flex flex-column justify-content-end">-->
+<!--                                            <h1>Non-profit</h1>-->
+<!--                                            -->
+<!--                                            <p>You can support us to grow more</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
 
-                                    <div class="carousel-item">
-                                        <img src="{% static 'images/slide/medium-shot-people-collecting-donations.jpg' %}" class="carousel-image img-fluid" alt="...">
-                                        
-                                        <div class="carousel-caption d-flex flex-column justify-content-end">
-                                            <h1>Humanity</h1>
-                                            
-                                            <p>Please tell your friends about our website</p>
-                                        </div>
-                                    </div>
-                                </div>
+<!--                                    <div class="carousel-item">-->
+<!--                                        <img src="{% static 'images/slide/medium-shot-people-collecting-donations.jpg' %}" class="carousel-image img-fluid" alt="...">-->
+<!--                                        -->
+<!--                                        <div class="carousel-caption d-flex flex-column justify-content-end">-->
+<!--                                            <h1>Humanity</h1>-->
+<!--                                            -->
+<!--                                            <p>Please tell your friends about our website</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
 
                                 <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -170,7 +182,7 @@
                                 <a href="donate.html" class="d-block">
                                     <img src="{% static 'images/icons/hands.png' %}" class="featured-block-image img-fluid" alt="">
 
-                                    <p class="featured-block-text">Become a <strong>volunteer</strong></p>
+                                    <p class="custom-btn btn featured-block-text">Become a <strong>volunteer</strong></p>
                                 </a>
                             </div>
                         </div>
@@ -180,7 +192,7 @@
                                 <a href="donate.html" class="d-block">
                                     <img src="{% static 'images/icons/heart.png' %}" class="featured-block-image img-fluid" alt="">
 
-                                    <p class="featured-block-text"><strong>Partner</strong> with Us</p>
+                                    <p class="featured-block-text custom-btn btn"><strong>Partner</strong> with Us</p>
                                 </a>
                             </div>
                         </div>
@@ -190,7 +202,7 @@
                                 <a href="donate.html" class="d-block">
                                     <img src="{% static 'images/icons/receive.png' %}" class="featured-block-image img-fluid" alt="">
 
-                                    <p class="featured-block-text">Make a <strong>Donation</strong></p>
+                                    <p class="featured-block-text custom-btn btn">Make a <strong>Donation</strong></p>
                                 </a>
                             </div>
                         </div>
@@ -200,7 +212,7 @@
                                 <a href="donate.html" class="d-block">
                                     <img src="{% static 'images/icons/scholarship.png' %}" class="featured-block-image img-fluid" alt="">
 
-                                    <p class="featured-block-text"><strong>Scholarship</strong> Program</p>
+                                    <p class="featured-block-text custom-btn btn"><strong>Scholarship</strong> Program</p>
                                 </a>
                             </div>
                         </div>
@@ -227,42 +239,42 @@
                             </div>
                             
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-12">
                                     <div class="custom-text-box mb-lg-0">
-                                        <h5 class="mb-3">Our Vision</h5>
+                                        <h2 class="mb-3">Our Vision</h2>
 
-                                        <p> Advancing the kingdom of God by reaching out to those in need with the love of God. </p>
-                                        <ul class="custom-list mt-2">
-                                            <li class="custom-list-item d-flex center">
-<!--                                                <span class="more-text"><a href="#"> More >></a> </span>-->
-                                                <i class="custom-text-box-icon me-2"></i>
-                                            </li>
+                                        <p class="mb-0"> Advancing the kingdom of God by reaching out to those in need with the love of God. </p>
+<!--                                        <ul class="custom-list mt-2">-->
+<!--                                            <li class="custom-list-item d-flex center">-->
+<!--&lt;!&ndash;                                                <span class="more-text"><a href="#"> More >></a> </span>&ndash;&gt;-->
+<!--                                                <i class="custom-text-box-icon me-2"></i>-->
+<!--                                            </li>-->
 
-                                        </ul>
+<!--                                        </ul>-->
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
-                                        <div class="counter-thumb"> 
-                                            <div class="d-flex">
-                                                <span class="counter-number" data-from="1" data-to="2023" data-speed="1000"></span>
-                                                <span class="counter-number-text"></span>
-                                            </div>
+<!--                                <div class="col-lg-6 col-md-6 col-12">-->
+<!--                                    <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">-->
+<!--                                        <div class="counter-thumb"> -->
+<!--                                            <div class="d-flex">-->
+<!--                                                <span class="counter-number" data-from="1" data-to="2023" data-speed="1000"></span>-->
+<!--                                                <span class="counter-number-text"></span>-->
+<!--                                            </div>-->
 
-                                            <span class="counter-text">Founded</span>
-                                        </div> 
+<!--                                            <span class="counter-text">Founded</span>-->
+<!--                                        </div> -->
 
-                                        <div class="counter-thumb mt-4"> 
-                                            <div class="d-flex">
-                                                <span class="counter-number-text">$</span>
-                                                <span class="counter-number" data-from="1" data-to="120" data-speed="1000"></span>
-                                            </div>
+<!--                                        <div class="counter-thumb mt-4"> -->
+<!--                                            <div class="d-flex">-->
+<!--                                                <span class="counter-number-text">$</span>-->
+<!--                                                <span class="counter-number" data-from="1" data-to="120" data-speed="1000"></span>-->
+<!--                                            </div>-->
 
-                                            <span class="counter-text">Donations</span>
-                                        </div> 
-                                    </div>
-                                </div>
+<!--                                            <span class="counter-text">Donations</span>-->
+<!--                                        </div> -->
+<!--                                    </div>-->
+<!--                                </div>-->
                             </div>
                         </div>
 
@@ -346,21 +358,6 @@
 
                                         <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito</p>
 
-                                        <div class="progress mt-4">
-                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-
-                                        <div class="d-flex align-items-center my-2">
-                                            <p class="mb-0">
-                                                <strong>Raised:</strong>
-                                                $18,500
-                                            </p>
-
-                                            <p class="ms-auto mb-0">
-                                                <strong>Goal:</strong>
-                                                $32,000
-                                            </p>
-                                        </div>
                                     </div>
 
                                     <a href="donate.html" class="custom-btn btn">Donate now</a>
@@ -378,21 +375,6 @@
 
                                         <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus tempor</p>
 
-                                        <div class="progress mt-4">
-                                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-
-                                        <div class="d-flex align-items-center my-2">
-                                            <p class="mb-0">
-                                                <strong>Raised:</strong>
-                                                $27,600
-                                            </p>
-
-                                            <p class="ms-auto mb-0">
-                                                <strong>Goal:</strong>
-                                                $60,000
-                                            </p>
-                                        </div>
                                     </div>
 
                                     <a href="donate.html" class="custom-btn btn">Donate now</a>
@@ -410,21 +392,6 @@
 
                                         <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
 
-                                        <div class="progress mt-4">
-                                            <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-
-                                        <div class="d-flex align-items-center my-2">
-                                            <p class="mb-0">
-                                                <strong>Raised:</strong>
-                                                $84,600
-                                            </p>
-
-                                            <p class="ms-auto mb-0">
-                                                <strong>Goal:</strong>
-                                                $100,000
-                                            </p>
-                                        </div>
                                     </div>
 
                                     <a href="donate.html" class="custom-btn btn">Donate now</a>
@@ -741,7 +708,7 @@
                     <div class="row">
 
                         <div class="col-lg-8 col-12 mx-auto">
-                            <h2 class="mb-lg-3">Happy Customers</h2>
+                            <h2 class="mb-lg-3">Testimonials</h2>
                             
                                 <div id="testimonial-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
 
@@ -885,7 +852,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-12 mb-4">
-                        <img src="{% static 'images/logo.png' %}" class="logo img-fluid" alt="">
+                        <img src="{% static 'images/apnlogo.ico' %}" class="logo img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12 mb-4">
