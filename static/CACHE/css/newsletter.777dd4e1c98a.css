@@ -1,0 +1,35 @@
+/* line 10, apnwebsite/static/scss/newsletter.scss */
+hr.primary-1px {
+  border: 1px solid #800000;
+  opacity: 1 !important; }
+
+/* line 15, apnwebsite/static/scss/newsletter.scss */
+.newsletter-container {
+  padding-top: 10% !important;
+  padding-bottom: 10% !important; }
+
+/* line 20, apnwebsite/static/scss/newsletter.scss */
+.text-box {
+  background-color: white;
+  border-radius: 3rem; }
+
+/* line 27, apnwebsite/static/scss/newsletter.scss */
+#col1 .icon {
+  font-size: 1.25em;
+  height: 3em;
+  padding-right: 2em; }
+
+/* line 34, apnwebsite/static/scss/newsletter.scss */
+#col1 .icon:hover {
+  fill: #F3CD00; }
+
+/* line 38, apnwebsite/static/scss/newsletter.scss */
+#col1 #icons a {
+  text-decoration: none;
+  color: #800000; }
+
+/* line 43, apnwebsite/static/scss/newsletter.scss */
+#col1 p {
+  font-size: 1.25em;
+  padding-top: .5em;
+  padding-bottom: .5em; }

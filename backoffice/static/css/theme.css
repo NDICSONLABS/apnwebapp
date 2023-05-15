@@ -1,0 +1,12 @@
+:root {  
+  --w-color-primary-hue: 0;
+  --w-color-primary-saturation: 100%;
+  --w-color-primary-lightness: 8%;
+  --w-color-secondary-hue: 0;
+  --w-color-secondary-saturation: 100%;
+  --w-color-secondary-lightness: 25%;
+  --w-color-focus: hsl(240,12.5%, 96.9%);
+  --w-color-info-hue: 175.1;
+  --w-color-info-saturation: 95%;
+  --w-color-info-lightness: 23%;
+}
