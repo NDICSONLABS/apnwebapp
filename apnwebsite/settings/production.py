@@ -9,9 +9,11 @@ env = environ.Env()
 
 environ.Env.read_env()
 
-DEBUG = 'RENDER' not in os.environ
+DEBUG = True #'RENDER' not in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*]
+
+SECRET_KEY = os.environ.get('SECRET_KEY', default="django-insecure-zo$k*ovelw5z4fa1$-w3wxd=*fm+cykp4v6!2k*3kejd+s3p)i") # noqa
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME') # noqa
 
@@ -26,6 +28,5 @@ try:
     from .base import * # noqa
     if RENDER_EXTERNAL_HOSTNAME:
         ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME) # noqa
-        SECRET_KEY = os.environ.get('SECRET_KEY', default="django-insecure-zo$k*ovelw5z4fa1$-w3wxd=*fm+cykp4v6!2k*3kejd+s3p)i") # noqa
 except ImportError:
     pass
