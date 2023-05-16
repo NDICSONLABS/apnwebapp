@@ -3,7 +3,7 @@ services:
     name: apnwebapp
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn mysite.wsgi:application"
+    startCommand: "gunicorn apnwebapp.wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
