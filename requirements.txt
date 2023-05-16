@@ -5,6 +5,7 @@ psycopg2-binary
 django-environ
 django_extensions
 dj-database-url
+django_cryptography
 django_compressor
 django-libsass
 gunicorn
