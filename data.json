@@ -1183,18 +1183,6 @@
   },
   {
     "model": "wagtailsearch.indexentry",
-    "pk": 13,
-    "fields": {
-      "content_type": 1,
-      "object_id": "1",
-      "title_norm": 2.4285714285714284,
-      "autocomplete": "Root",
-      "title": "Root",
-      "body": ""
-    }
-  },
-  {
-    "model": "wagtailsearch.indexentry",
     "pk": 14,
     "fields": {
       "content_type": 52,
