@@ -11,7 +11,7 @@ environ.Env.read_env()
 
 DEBUG = True #'RENDER' not in os.environ
 
-ALLOWED_HOSTS = ["*]
+ALLOWED_HOSTS = ["*"]
 
 SECRET_KEY = os.environ.get('SECRET_KEY', default="django-insecure-zo$k*ovelw5z4fa1$-w3wxd=*fm+cykp4v6!2k*3kejd+s3p)i") # noqa
 
