@@ -1183,18 +1183,6 @@
   },
   {
     "model": "wagtailsearch.indexentry",
-    "pk": 14,
-    "fields": {
-      "content_type": 52,
-      "object_id": "15",
-      "title_norm": 0.6666666666666666,
-      "autocomplete": "About Us",
-      "title": "About Us",
-      "body": ""
-    }
-  },
-  {
-    "model": "wagtailsearch.indexentry",
     "pk": 15,
     "fields": {
       "content_type": 52,
