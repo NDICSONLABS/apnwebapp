@@ -19,11 +19,7 @@ RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME') # noqa
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default=dj_database_url.parse(env("DATABASES_URL")),
-        conn_max_age=600
-    )
+    'default': dj_database_url.parse(env("DATABASES_URL"))
 }
 
 try:
