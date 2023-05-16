@@ -1182,54 +1182,6 @@
     }
   },
   {
-    "model": "wagtailsearch.indexentry",
-    "pk": 35,
-    "fields": {
-      "content_type": 6,
-      "object_id": "7",
-      "title_norm": 0.5417156286721504,
-      "autocomplete": "studio-portrait-emotional-happy-funny",
-      "title": "studio-portrait-emotional-happy-funny",
-      "body": ""
-    }
-  },
-  {
-    "model": "wagtailsearch.indexentry",
-    "pk": 36,
-    "fields": {
-      "content_type": 6,
-      "object_id": "8",
-      "title_norm": 0.4592391304347826,
-      "autocomplete": "group-people-volunteering-foodbank-poor-people",
-      "title": "group-people-volunteering-foodbank-poor-people",
-      "body": ""
-    }
-  },
-  {
-    "model": "wagtailsearch.indexentry",
-    "pk": 37,
-    "fields": {
-      "content_type": 6,
-      "object_id": "9",
-      "title_norm": 0.4456,
-      "autocomplete": "portrait-volunteer-who-organized-donations-charity",
-      "title": "portrait-volunteer-who-organized-donations-charity",
-      "body": ""
-    }
-  },
-  {
-    "model": "wagtailsearch.indexentry",
-    "pk": 38,
-    "fields": {
-      "content_type": 6,
-      "object_id": "10",
-      "title_norm": 0.504180602006689,
-      "autocomplete": "medium-shot-volunteers-with-clothing-donations",
-      "title": "medium-shot-volunteers-with-clothing-donations",
-      "body": ""
-    }
-  },
-  {
     "model": "wagtailcore.locale",
     "pk": 1,
     "fields": {
