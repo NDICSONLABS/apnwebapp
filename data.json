@@ -16,5 +16,813 @@
       "groups": [],
       "user_permissions": []
     }
+  },
+  {
+    "model": "configuration.organisationsetup",
+    "pk": 1,
+    "fields": {
+      "site": 2,
+      "name": "Agape Partners Network",
+      "abbreviation": "A P N",
+      "mission": "To grow a network of believers worldwide partnering with one another to spread the gospel of salvation through the sharing of God’s love by reaching out to individuals, families, ministries and communities in need.",
+      "vision": "Advancing the kingdom of God by reaching out to those in need with the love of God.",
+      "slogan": "Sharing love with a world in need",
+      "address": "Akershusstranda 20, 0150 Oslo, Norway",
+      "phone": "120-240-9600",
+      "email": "donate@charity.org",
+      "facebook": "http://127.0.0.1:8000/facebook",
+      "twitter": "http://127.0.0.1:8000/twitter",
+      "youtube": "http://127.0.0.1:8000/youtube",
+      "instagram": "http://127.0.0.1:8000/insta",
+      "linkedin": "http://127.0.0.1:8000/linked",
+      "whatsapp": "http://127.0.0.1:8000/whatsapp"
+    }
+  },
+  {
+    "model": "home.homepage",
+    "pk": 3,
+    "fields": {
+      "body": "[{\"type\": \"AboutSection\", \"value\": {\"MissionVisionImage\": 8, \"FoundingPartner\": {\"full_names\": \"Dr. Myles Takang\", \"partnership_type\": \"Co-Founding Partner\", \"background\": \"<p data-block-key=\\\"06d9x\\\"></p><p data-block-key=\\\"c3bbi\\\">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional charity theme based</p><p data-block-key=\\\"db9fp\\\">You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p>\", \"photo\": 9, \"twitter\": \"http://127.0.0.1:8000/twitter\", \"facebook\": \"http://127.0.0.1:8000/facebook\", \"instagram\": \"http://127.0.0.1:8000/instagram\"}, \"Adblock\": {\"statement\": \"<p data-block-key=\\\"l8vdh\\\">Make an impact.<br/>Save lives.</p>\", \"donation_link\": {\"button_page\": 27, \"button_url\": \"\"}, \"volunteer_button\": 3}}, \"id\": \"a674f44e-b310-472f-847d-8426a272bb94\"}]"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 1,
+    "fields": {
+      "collection": 1,
+      "title": "medium-shot-people-collecting-donations",
+      "file": "original_images/medium-shot-people-collecting-donations.jpg",
+      "width": 1920,
+      "height": 1184,
+      "created_at": "2023-05-12T04:06:17.878Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 183831,
+      "file_hash": "f651cd811dc4a1a9784e93eadea7093224cef1df"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 2,
+    "fields": {
+      "collection": 1,
+      "title": "volunteer-helping-with-donation-box",
+      "file": "original_images/volunteer-helping-with-donation-box.jpg",
+      "width": 1920,
+      "height": 1280,
+      "created_at": "2023-05-12T04:07:26.350Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 173062,
+      "file_hash": "c22e823874c4dae0ac7195c04b87513dfec33ddd"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 3,
+    "fields": {
+      "collection": 1,
+      "title": "volunteer-selecting-organizing-clothes-donations-charity",
+      "file": "original_images/volunteer-selecting-organizing-clothes-donations-charity.jpg",
+      "width": 1920,
+      "height": 1207,
+      "created_at": "2023-05-12T04:08:31.632Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 139031,
+      "file_hash": "211f142ad80fd8bca22753c5af7d3b31ba55c8fd"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 4,
+    "fields": {
+      "collection": 1,
+      "title": "portrait-beautiful-young-woman-standing-grey-wall",
+      "file": "original_images/portrait-beautiful-young-woman-standing-grey-wall.jpg",
+      "width": 500,
+      "height": 334,
+      "created_at": "2023-05-14T05:24:55.652Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 24232,
+      "file_hash": "9ccb0bcdab3c25027740217df2a64ee2dc18ec93"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 5,
+    "fields": {
+      "collection": 1,
+      "title": "portrait-young-redhead-bearded-male",
+      "file": "original_images/portrait-young-redhead-bearded-male.jpg",
+      "width": 500,
+      "height": 334,
+      "created_at": "2023-05-14T05:29:28.390Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 25921,
+      "file_hash": "cfa6b029f4437f5687bcd64227597584c47b7ab7"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 6,
+    "fields": {
+      "collection": 1,
+      "title": "pretty-blonde-woman-wearing-white-t-shirt",
+      "file": "original_images/pretty-blonde-woman-wearing-white-t-shirt.jpg",
+      "width": 500,
+      "height": 334,
+      "created_at": "2023-05-14T05:32:41.289Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 30052,
+      "file_hash": "c8971e020d6ecc4fda7559ef7dfa1c64e7f36d62"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 7,
+    "fields": {
+      "collection": 1,
+      "title": "studio-portrait-emotional-happy-funny",
+      "file": "original_images/studio-portrait-emotional-happy-funny.jpg",
+      "width": 500,
+      "height": 334,
+      "created_at": "2023-05-14T05:32:58.473Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 26473,
+      "file_hash": "cb767536742c4844448bb69aa3da8858c77dcf63"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 8,
+    "fields": {
+      "collection": 1,
+      "title": "group-people-volunteering-foodbank-poor-people",
+      "file": "original_images/group-people-volunteering-foodbank-poor-people.jpg",
+      "width": 1000,
+      "height": 667,
+      "created_at": "2023-05-14T07:01:59.951Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 139069,
+      "file_hash": "98aa5dffd2e141537195361e4a35ab30b0202f08"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 9,
+    "fields": {
+      "collection": 1,
+      "title": "portrait-volunteer-who-organized-donations-charity",
+      "file": "original_images/portrait-volunteer-who-organized-donations-charity.jpg",
+      "width": 1000,
+      "height": 1500,
+      "created_at": "2023-05-14T07:15:16.102Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 102388,
+      "file_hash": "59200e96ad05f2812a91757d1616ef1f9c0d1fc9"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 10,
+    "fields": {
+      "collection": 1,
+      "title": "medium-shot-volunteers-with-clothing-donations",
+      "file": "original_images/medium-shot-volunteers-with-clothing-donations.jpg",
+      "width": 1000,
+      "height": 667,
+      "created_at": "2023-05-15T15:00:29.945Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 91110,
+      "file_hash": "9e91bd632a557310480d6f458aedf3cde1e51757"
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 1,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/medium-shot-people-collecting-donations.max-165x165.jpg",
+      "width": 165,
+      "height": 101,
+      "focal_point_key": "",
+      "image": 1
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 2,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/volunteer-helping-with-donation-box.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 2
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 3,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/volunteer-selecting-organizing-clothes-donat.max-165x165.jpg",
+      "width": 165,
+      "height": 103,
+      "focal_point_key": "",
+      "image": 3
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 4,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/volunteer-helping-with-donation-.2e16d0ba.fill-1920x1184.jpg",
+      "width": 1920,
+      "height": 1184,
+      "focal_point_key": "2e16d0ba",
+      "image": 2
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 5,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/volunteer-selecting-organizing-c.2e16d0ba.fill-1920x1184.jpg",
+      "width": 1920,
+      "height": 1185,
+      "focal_point_key": "2e16d0ba",
+      "image": 3
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 6,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/medium-shot-people-collecting-do.2e16d0ba.fill-1920x1184.jpg",
+      "width": 1920,
+      "height": 1184,
+      "focal_point_key": "2e16d0ba",
+      "image": 1
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 7,
+    "fields": {
+      "filter_spec": "max-400x400",
+      "file": "images/volunteer-helping-with-donation-box.max-400x400.jpg",
+      "width": 400,
+      "height": 266,
+      "focal_point_key": "",
+      "image": 2
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 8,
+    "fields": {
+      "filter_spec": "max-400x400",
+      "file": "images/volunteer-selecting-organizing-clothes-donat.max-400x400.jpg",
+      "width": 400,
+      "height": 251,
+      "focal_point_key": "",
+      "image": 3
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 9,
+    "fields": {
+      "filter_spec": "original",
+      "file": "images/volunteer-selecting-organizing-clothes-donation.original.jpg",
+      "width": 1920,
+      "height": 1207,
+      "focal_point_key": "",
+      "image": 3
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 10,
+    "fields": {
+      "filter_spec": "max-800x600",
+      "file": "images/volunteer-selecting-organizing-clothes-donat.max-800x600.jpg",
+      "width": 800,
+      "height": 502,
+      "focal_point_key": "",
+      "image": 3
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 11,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/portrait-beautiful-young-woman-standing-grey.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 4
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 12,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/portrait-young-redhead-bearded-male.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 5
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 13,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/pretty-blonde-woman-wearing-white-t-shirt.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 6
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 14,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/studio-portrait-emotional-happy-funny.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 7
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 15,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/portrait-beautiful-young-woman-s.2e16d0ba.fill-1920x1184.jpg",
+      "width": 500,
+      "height": 310,
+      "focal_point_key": "2e16d0ba",
+      "image": 4
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 16,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/portrait-young-redhead-bearded-m.2e16d0ba.fill-1920x1184.jpg",
+      "width": 500,
+      "height": 310,
+      "focal_point_key": "2e16d0ba",
+      "image": 5
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 17,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/pretty-blonde-woman-wearing-whit.2e16d0ba.fill-1920x1184.jpg",
+      "width": 500,
+      "height": 310,
+      "focal_point_key": "2e16d0ba",
+      "image": 6
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 18,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/studio-portrait-emotional-happy-.2e16d0ba.fill-1920x1184.jpg",
+      "width": 500,
+      "height": 310,
+      "focal_point_key": "2e16d0ba",
+      "image": 7
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 19,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/group-people-volunteering-foodbank-poor-peop.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 8
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 20,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/portrait-volunteer-who-organized-donations-c.max-165x165.jpg",
+      "width": 110,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 9
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 21,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/medium-shot-volunteers-with-clothing-donatio.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 10
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 22,
+    "fields": {
+      "filter_spec": "original",
+      "file": "images/medium-shot-volunteers-with-clothing-donations.original.jpg",
+      "width": 1000,
+      "height": 667,
+      "focal_point_key": "",
+      "image": 10
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 23,
+    "fields": {
+      "filter_spec": "max-800x600",
+      "file": "images/medium-shot-volunteers-with-clothing-donatio.max-800x600.jpg",
+      "width": 800,
+      "height": 533,
+      "focal_point_key": "",
+      "image": 10
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 24,
+    "fields": {
+      "filter_spec": "max-400x400",
+      "file": "images/medium-shot-volunteers-with-clothing-donatio.max-400x400.jpg",
+      "width": 400,
+      "height": 266,
+      "focal_point_key": "",
+      "image": 10
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 25,
+    "fields": {
+      "filter_spec": "fill-1920x1184",
+      "file": "images/portrait-volunteer-who-organized.2e16d0ba.fill-1920x1184.jpg",
+      "width": 1000,
+      "height": 618,
+      "focal_point_key": "2e16d0ba",
+      "image": 9
+    }
+  },
+  {
+    "model": "content.homepagecarousel",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "page": 3,
+      "title": "be a Kind Heart",
+      "sub_title": "Professional charity theme based on Bootstrap 5.2.2",
+      "image": 2
+    }
+  },
+  {
+    "model": "content.homepagecarousel",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "page": 3,
+      "title": "Non-profit",
+      "sub_title": "You can support us to grow more",
+      "image": 3
+    }
+  },
+  {
+    "model": "content.homepagecarousel",
+    "pk": 3,
+    "fields": {
+      "sort_order": 2,
+      "page": 3,
+      "title": "Humanity",
+      "sub_title": "Please tell your friends about our website",
+      "image": 1
+    }
+  },
+  {
+    "model": "content.testimonial",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "page": 3,
+      "testifiers_quote": "Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito charity theme",
+      "testifiers_name": "Maria",
+      "testifiers_title": "Boss",
+      "testifiers_photo": 4
+    }
+  },
+  {
+    "model": "content.testimonial",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "page": 3,
+      "testifiers_quote": "Sed leo nisl, posuere at molestie ac, suscipit auctor mauris quis metus tempor orci",
+      "testifiers_name": "Thomas",
+      "testifiers_title": "Partner",
+      "testifiers_photo": 5
+    }
+  },
+  {
+    "model": "content.testimonial",
+    "pk": 3,
+    "fields": {
+      "sort_order": 2,
+      "page": 3,
+      "testifiers_quote": "Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito charity theme",
+      "testifiers_name": "Jane",
+      "testifiers_title": "Advisor",
+      "testifiers_photo": 6
+    }
+  },
+  {
+    "model": "content.testimonial",
+    "pk": 4,
+    "fields": {
+      "sort_order": 3,
+      "page": 3,
+      "testifiers_quote": "Sed leo nisl, posuere at molestie ac, suscipit auctor mauris quis metus tempor orci",
+      "testifiers_name": "Bob",
+      "testifiers_title": "Entreprenuer",
+      "testifiers_photo": 7
+    }
+  },
+  {
+    "model": "newsletter.subscriber",
+    "pk": 1,
+    "fields": {
+      "full_name": "Agape Partners Network",
+      "email": "donate@charity.org",
+      "ident": "123",
+      "validated": false,
+      "token": null
+    }
+  },
+  {
+    "model": "wagtailmenus.mainmenuitem",
+    "pk": 5,
+    "fields": {
+      "sort_order": 0,
+      "link_page": 3,
+      "link_url": null,
+      "url_append": "",
+      "handle": "",
+      "link_text": "",
+      "allow_subnav": true,
+      "menu": 1
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "link_page": null,
+      "link_url": "#",
+      "url_append": "",
+      "handle": "",
+      "link_text": "Our Story",
+      "allow_subnav": false,
+      "menu": 1
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "link_page": null,
+      "link_url": "#",
+      "url_append": "",
+      "handle": "",
+      "link_text": "Newsroom",
+      "allow_subnav": false,
+      "menu": 1
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 3,
+    "fields": {
+      "sort_order": 2,
+      "link_page": null,
+      "link_url": "#",
+      "url_append": "",
+      "handle": "",
+      "link_text": "Services",
+      "allow_subnav": false,
+      "menu": 1
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 4,
+    "fields": {
+      "sort_order": 3,
+      "link_page": null,
+      "link_url": "#",
+      "url_append": "",
+      "handle": "",
+      "link_text": "Become a volunteer",
+      "allow_subnav": false,
+      "menu": 1
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 5,
+    "fields": {
+      "sort_order": 4,
+      "link_page": null,
+      "link_url": "#",
+      "url_append": "",
+      "handle": "",
+      "link_text": "Partner with us",
+      "allow_subnav": false,
+      "menu": 1
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 8,
+    "fields": {
+      "sort_order": 0,
+      "link_page": 3,
+      "link_url": null,
+      "url_append": "",
+      "handle": "",
+      "link_text": "",
+      "allow_subnav": false,
+      "menu": 3
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 9,
+    "fields": {
+      "sort_order": 1,
+      "link_page": 3,
+      "link_url": null,
+      "url_append": "",
+      "handle": "",
+      "link_text": "",
+      "allow_subnav": true,
+      "menu": 3
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 10,
+    "fields": {
+      "sort_order": 2,
+      "link_page": 3,
+      "link_url": null,
+      "url_append": "",
+      "handle": "",
+      "link_text": "",
+      "allow_subnav": false,
+      "menu": 3
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 11,
+    "fields": {
+      "sort_order": 3,
+      "link_page": 3,
+      "link_url": null,
+      "url_append": "",
+      "handle": "",
+      "link_text": "",
+      "allow_subnav": false,
+      "menu": 3
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 12,
+    "fields": {
+      "sort_order": 4,
+      "link_page": 3,
+      "link_url": null,
+      "url_append": "",
+      "handle": "",
+      "link_text": "",
+      "allow_subnav": true,
+      "menu": 3
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenuitem",
+    "pk": 13,
+    "fields": {
+      "sort_order": 5,
+      "link_page": 3,
+      "link_url": null,
+      "url_append": "",
+      "handle": "",
+      "link_text": "",
+      "allow_subnav": true,
+      "menu": 3
+    }
+  },
+  {
+    "model": "wagtailmenus.mainmenu",
+    "pk": 1,
+    "fields": {
+      "site": 2,
+      "max_levels": 2
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenu",
+    "pk": 1,
+    "fields": {
+      "site": 2,
+      "title": "Quick Links",
+      "handle": "footermenu",
+      "heading": "Quick Links",
+      "max_levels": 1
+    }
+  },
+  {
+    "model": "wagtailmenus.flatmenu",
+    "pk": 3,
+    "fields": {
+      "site": 2,
+      "title": "Main",
+      "handle": "main",
+      "heading": "",
+      "max_levels": 3
+    }
   }
 ]

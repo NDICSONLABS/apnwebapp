@@ -1,12 +1,11 @@
-from typing import Iterable, Optional
 from django.db import models
 
 from modelcluster.fields import ParentalKey
 from wagtail.models import Orderable
 from wagtail.admin.panels import (
-    FieldPanel, 
-    MultiFieldPanel, 
-    InlinePanel, 
+    FieldPanel,
+    MultiFieldPanel,
+    InlinePanel,
     FieldRowPanel
     )
 from wagtail.fields import RichTextField
@@ -28,10 +27,10 @@ class FormField(AbstractFormField):
 
 class ContactPage(AbstractEmailForm):
 
-    template = "contact/contact_page.html"
+    template = "forms/contact_page.html"
     # This is the default path.
     # If ignored, Wagtail adds _landing.html to your template name
-    landing_page_template = "contact/contact_page_landing.html"
+    landing_page_template = "forms/contact_page_landing.html"
 
     intro = RichTextField(blank=True)
     thank_you_text = RichTextField(blank=True)
@@ -87,11 +86,11 @@ class Testimonial(Orderable, models.Model):
         related_name="+",
 
     )
-    
+
     def save(self, *args, **kwargs) -> None:
         self.page_id = HomePage.objects.live().all()[0].pk
         return super().save(*args, **kwargs)
-    
+
     def __str__(self) -> str:
         return "{}'s Testimony".format(self.testifiers_name)
 
