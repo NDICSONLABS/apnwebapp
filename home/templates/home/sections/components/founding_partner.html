@@ -1,0 +1,35 @@
+{% load wagtailimages_tags organisation_tags %}
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-5 col-12">
+                {% image self.photo max-1320x1200 as img %}
+                <img src="{{img.url}}" class="about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-5 col-md-7 col-12">
+                <div class="custom-text-block">
+                    <h2 class="mb-0">{{self.full_names}}</h2>
+
+                    <p class="text-muted mb-lg-4 mb-md-4">{{self.partnership_type}}</p>
+                    {{self.background}}
+                    <ul class="social-icon mt-4">
+                        <li class="social-icon-item">
+                            <a href="{{self.twitter}}" target="_blank" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="{{self.facebook}}" target="_blank" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="{{self.instagram}}" target="_blank" class="social-icon-link bi-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

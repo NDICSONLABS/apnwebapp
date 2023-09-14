@@ -1,0 +1,34 @@
+{% load wagtailimages_tags organisation_tags %}
+<section class="section-padding section-bg" id="section_2">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                {% image self.image max-1500x1400 as img %}
+                <img src="{{img.url}}" class="custom-text-box-image img-fluid" alt="">
+            </div>
+
+            {% load_organisation_info as org %}
+            <div class="col-lg-6 col-12">
+                <div class="custom-text-box">
+                    <h2 class="mb-2">Our Mission</h2>
+
+                    <h5 class="mb-3">{{org.name}}, {{org.slogan}}</h5>
+
+                    <p class="mb-0">{{org.mission}}</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="custom-text-box mb-lg-0">
+                            <h2 class="mb-3">Our Vision</h2>
+
+                            <p class="mb-0"> {{org.vision}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

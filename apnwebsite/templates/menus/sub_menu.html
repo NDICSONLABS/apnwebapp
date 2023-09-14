@@ -1,8 +1,0 @@
-{% load menu_tags %}
-{% if menu_items %}
-<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-	{% for item in menu_items %}
-	<li><a class="dropdown-item {{ item.active_class }}" href="{{ item.href }}">{{ item.text }}</a></li>
-	{% endfor %}
-</ul>
-{% endif %}

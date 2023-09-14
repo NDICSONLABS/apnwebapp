@@ -1,0 +1,10 @@
+{% load organisation_tags %}
+
+{% load_socials as social_media %}
+<ul class="social-icon">
+    {% for site in social_media %}
+    <li class="social-icon-item">
+        <a href="{{site.link}}" class="social-icon-link bi-{{site.name}}"></a>
+    </li>
+    {% endfor %}
+</ul>

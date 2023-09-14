@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static wagtailcore_tags %}
+
+{% block content %}
+<!-- Page wrapper for sticky footer -->
+<!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+<main class="page-wrapper">
+
+  <!-- Hero -->
+  <section class="dark-mode position-relative pt-3 mb-5" style="background-color: #000000;">
+
+    <!-- Content -->
+    <div class="container position-relative zindex-2 pb-2 pb-md-0">
+
+      <!-- Breadcrumb -->
+      <nav class="pt-lg-4" aria-label="breadcrumb">
+        {% if self.get_ancestors|length > 1 %}
+        <ol class="breadcrumb mb-0">
+          {% for p in self.get_ancestors %}
+          {% if p.is_root == False %}
+          <li class="breadcrumb-item">
+            <a href="{{ p.url }}"><i class="bx bx-home-alt fs-lg me-1"></i>{{ p.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+          <li class="breadcrumb-item active" aria-current="page"><span class="text-white">{{self.title}}</span></li>
+        </ol>
+        {% endif %}
+      </nav>
+
+      <div class="row justify-content-center pt-3 mt-3">
+        <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 text-center">
+          <h1 class="mb-5 text-white">{{ self.title }}</h1>
+          <div class="d-flex justify-content-center">
+            {% include 'components/socials.html' %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom shape -->
+    <div class="d-flex position-absolute top-100 start-0 w-100 overflow-hidden mt-n5" style="color: #000000;">
+      <div class="position-relative start-50 translate-middle-x flex-shrink-0 mt-n5 mt-md-n3 mt-lg-n1" style="width: 3788px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="3788" height="144" viewBox="0 0 3788 144">
+          <path fill="currentColor" d="M0,0h3788.7c-525,90.2-1181.7,143.9-1894.3,143.9S525,90.2,0,0z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <!-- Donate + Volunteer -->
+  <section class="container py-5 my-md-2 my-lg-4 my-xl-5">
+    <div class="row justify-content-center pt-5 pb-1 pb-sm-2 pb-md-3 mt-3">
+      <div class="col-xxl-8 col-xl-9 col-lg-10 pt-sm-2 pt-md-5">
+        <div class="d-sm-flex">
+          {% for block in page.body %}
+          {{block}}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (Accordion) -->
+  <section class="container  mb-5">
+    <div class="rounded-3 py-5 px-3 px-sm-4 px-md-0" style="background-color:#ffe8e8">
+      <h2 class="text-center pt-md-1 pt-lg-3 pt-xl-4 pb-4 mt-xl-1 mb-2">Becoming a partner: </h2>
+      <div class="row justify-content-center pb-lg-4 pb-xl-5">
+        <div class="col-xl-8 col-lg-9 col-md-10 pb-md-2">
+          <div class="accordion" id="faq">
+
+            <!-- Item -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button shadow-none rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#q-1" aria-expanded="true" aria-controls="q-1">What about our Partnership?</button>
+              </h3>
+              <div class="accordion-collapse collapse show" id="q-1" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>APN welcomes partners from different countries and ministries all over the world to support and facilitate the realization of its mission. Partnership is established by a longterm commitment to either financially support the mission, and/or volunteer skill/time for service.
+                  You can partner financially by subscribing for a periodic contribution and/or by volunteering your time and skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-2" aria-expanded="false" aria-controls="q-2">How to {{self.title|richtext}}?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="q-2" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in facilisis nibh. Vestibulum ac porttitor sapien. Curabitur laoreet malesuada gravida. Phasellus vehicula vestibulum consequat. Curabitur feugiat eget sem vitae laoreet. Fusce porttitor finibus tellus, quis condimentum nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus vehicula malesuada magna at viverra. Fusce non est eget libero convallis fringilla suspendisse.</p>
+                  <p>Nunc dolor velit, interdum finibus bibendum vel, mattis a magna. Mauris mollis sapien ac mi aliquet varius. Proin nec est nibh. Dignissim amet adipiscing massa integer.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

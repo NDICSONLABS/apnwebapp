@@ -1,0 +1,17 @@
+<div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+    <div class="custom-block-wrap">
+        {% image self.image max-1320x1200 as img %}
+        <img src="{{img.url}}" class="custom-block-image img-fluid" alt="">
+
+        <div class="custom-block">
+            <div class="custom-block-body">
+                <h5 class="mb-3">{{self.title}}</h5>
+
+                <p>{{self.description}}</p>
+
+            </div>
+
+            <a href="{{self.campaign_page.pageurl}}" class="custom-btn btn">Donate now</a>
+        </div>
+    </div>
+</div>

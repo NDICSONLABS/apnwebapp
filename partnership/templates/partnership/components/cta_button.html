@@ -1,0 +1,19 @@
+{% load wagtailcore_tags wagtailimages_tags organisation_tags %}
+
+{% for action_item in self.cta_button %}
+{% check_pos action_item.pos 1 as pos %}
+<div class="{% if pos %}d-flex flex-column{% else %}card{% endif %} w-sm-50 border-0 bg-transparent text-center px-sm-1 px-md-5 {% if pos %}pb-3 pb-sm-0 mb-4 mb-sm-0{% endif %}">
+    <div class="card-body p-0">
+        <div class="d-inline-block bg-pinky-color text-primary rounded-circle fs-3 lh-1 p-3 mb-3">
+            {% image action_item.icon max-64x64 as img %}
+            <img src="{{img.url}}" class="featured-block-image img-fluid" alt="">
+        </div>
+        <p class="pb-2 pb-sm-3 mb-3">
+            Please click this link if you want to become a partner by donation.</p>
+    </div>
+    <div class="card-footer border-0 p-0">
+        <a href="{{action_item.link_page.get_url}}" class="btn custom-btn-p btn-lg">{{action_item.action_name|richtext}}</a>
+    </div>
+</div>
+{% if pos %}<div class="vr text-border d-none d-sm-inline-block m-4"></div>{% endif %}
+{% endfor %}

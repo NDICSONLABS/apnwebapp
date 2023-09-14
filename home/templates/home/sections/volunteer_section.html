@@ -1,0 +1,58 @@
+{% load static wagtailcore_tags  crispy_forms_field crispy_forms_tags %}
+
+<section class="volunteer-section section-padding" id="section_4">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-12">
+                <h2 class="text-white mb-4">Volunteer</h2>
+
+                <form class="custom-form volunteer-form mb-5 mb-lg-0" action="{% pageurl page %}" method="POST" role="form">
+                    {% csrf_token 'csrf_token' %}
+                    <h3 class="mb-4">Become a volunteer today</h3>
+
+                    <div class="row">
+                        <!-- Full Subject -->
+                        {% with subject=form.i_want_to_become_a_partner_by_committing_to_volunteer_my_time_skills_and_service %}
+
+                        {{subject|as_crispy_field}}
+                        {% endwith %}
+                        <!-- Full name -->
+                        {% with name=form.full_names %}
+                        <div class="col-lg-6 col-12">
+                            {{name|as_crispy_field}}
+                        </div>
+                        {% endwith %}
+                        <!-- Full Email -->
+                        {% with email=form.email %}
+                        <div class="col-lg-6 col-12">
+                            {{email|as_crispy_field}}
+                        </div>
+                        {% endwith %}
+                        <!-- Full CV -->
+                        {% with cv=form.cv %}
+                        {{cv|as_crispy_field}}
+                        {% endwith %}
+                        <!-- Full Message -->
+                        {% with message=form.message %}
+                            {{message|as_crispy_field}}
+                        {% endwith %}
+
+                    </div>
+                    <button type="submit" class="form-control">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <img src="{% static 'images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg' %}" class="volunteer-image img-fluid" alt="">
+
+                <div class="custom-block-body text-center">
+                    <h4 class="text-white mt-lg-3 mb-lg-3">About Volunteering</h4>
+
+                    <p class="text-white">{{page.intro|richtext|truncatewords:100 }}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+{% load wagtailcore_tags wagtailimages_tags organisation_tags %}
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
+      {% load_organisation_info as info %}
+      <div class="col-lg-10 col-12 text-center mx-auto">
+        <h2 class="mb-5">Welcome to {{info.name}}</h2>
+      </div>
+
+      {% for action_item in self.action_block %}
+      {% check_pos action_item.pos as pos %}
+      <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 {% if pos %}mb-md-4{% endif %}">
+        <div class="featured-block d-flex justify-content-center align-items-center">
+          <a href="{{action_item.link_page.get_url}}" class="d-block">
+            {% image action_item.icon max-320x200 as img %}
+            <img src="{{img.url}}" class="featured-block-image img-fluid" alt="">
+
+            <p class="featured-block-text custom-btn btn">{{action_item.action_name|richtext}}</p>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

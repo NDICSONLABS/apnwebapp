@@ -1,0 +1,33 @@
+{% load wagtailimages_tags organisation_tags %}
+<section class="section-padding" id="section_3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12 text-center mb-4">
+                <h2>{{self.section_title}}</h2>
+            </div>
+            {% with services=self.content %}
+            {% for service in services %}
+                    {% is_pos service services as pos %}
+            <div class="col-lg-4 col-md-6 col-12 {% if pos %}mb-4 mb-lg-0{% endif %}">
+                <div class="custom-block-wrap">
+                    {% image service.image max-1320x1200 as img %}
+                    <img src="{{img.url}}" class="custom-block-image img-fluid" alt="">
+
+                    <div class="custom-block">
+                        <div class="custom-block-body">
+                            <h5 class="mb-3">{{service.title}}</h5>
+
+                            <p>{{service.description}}</p>
+
+                        </div>
+
+                        <a href="{{service.campaign_page.get_url}}" class="custom-btn btn">Donate now</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endwith %}
+        </div>
+    </div>
+</section>
