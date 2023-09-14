@@ -41,7 +41,7 @@ class ContentBlock(blocks.StructBlock):
 
 
 class NewsletterIndex(RoutablePageMixin, Page):
-    parent_page_types = ['home.HomePage']
+    # parent_page_types = ['home.HomePage']
     subpage_types = ['Newsletter']
     max_count = 1
 
@@ -156,7 +156,7 @@ class NewsletterIndex(RoutablePageMixin, Page):
                     subscriber.delete()
             return render(request, "newsletter/unsubscribe_success.html", context) # noqa
 
-    @route(r'^validate')
+    @route(r'validate')
     def validate(self, request, *args, **kwargs):
         context = self.get_context(request, *args, **kwargs)
         token = request.GET.get('token')

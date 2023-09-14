@@ -1,21 +1,9 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags compress wagtailimages_tags static%}
 
-{% block extra_css %}
-    {% compress css%}
-        <link type="text/x-scss" href="{% static 'scss/newsletter.scss' %}" rel="stylesheet" media="screen">
-    {% endcompress css%}
-{% endblock %}
-
 {% block content %}
-<nav class="navbar navbar-dark bg-dark" aria-label="breadcrumb">
-    <div class="container container-fluid text-light fs-5">
-        <ol class="breadcrumb mb-0 mt-1 align-middle d-md-flex d-none">
-            <li class="breadcrumb-item"><a class="text-light text-decoration-none" href="/">Home</a></li> 
-            <li class="breadcrumb-item active"><a class="text-light text-decoration-none" href="{% slugurl 'newsletter'%}">Newsletter</a></li>
-        </ol>
-    </div>
-</nav>
+
+{% include 'components/breadcrumb.html' %}
 <div class="container content-container newsletter-container">
     <div class="text-box">
         <div id="col1" class="offset-1 col-10 pt-5 pb-5 text-center">

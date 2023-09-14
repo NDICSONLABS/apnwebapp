@@ -135,6 +135,13 @@ class Adblock(blocks.StructBlock):
         icon = "user"
 
 
+class ServiceBlock(blocks.StructBlock):
+    image = ImageChooserBlock(required=False)
+    title = blocks.CharBlock(required=True, help_text="Enter a title.") # noqa
+    description = RichtextBlock(label="Description", help_text="Describe the service/project requiring funding.")
+    donation_page = blocks.PageChooserBlock(required=True, help_text='Selected the specific donation Page') # noqa
+
+
 class FoundingPartnerBlock(blocks.StructBlock):
     'Founding partner block on the home page'
     full_names = blocks.CharBlock(required=True, help_text="Enter Founding partner's name.") # noqa

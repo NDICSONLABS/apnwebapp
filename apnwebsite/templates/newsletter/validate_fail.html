@@ -1,12 +1,6 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags compress wagtailimages_tags static%}
 
-{% block extra_css %}
-    {% compress css%}
-        <link type="text/x-scss" href="{% static 'scss/newsletter.scss' %}" rel="stylesheet" media="screen">
-    {% endcompress css%}
-{% endblock %}
-
 {% block content %}
 <div class="container pt-5 pb-5 content-container newsletter-container">	
     <nav class="navbar navbar-dark bg-dark" aria-label="breadcrumb">

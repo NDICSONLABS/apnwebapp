@@ -30,10 +30,12 @@ INSTALLED_APPS = [
     "configuration",
     "content",
     "newsletter",
+    "wagtail_events",
     "backoffice",
     'wagtail.contrib.modeladmin',
     'wagtailmenus',
     'wagtail.contrib.settings',
+    'wagtail.contrib.routable_page',
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
@@ -175,6 +177,7 @@ WAGTAILSEARCH_BACKENDS = {
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend - # noqa
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
+# WAGTAIL_APPEND_SLASH = False
 WAGTAILADMIN_BASE_URL = "http://example.com"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

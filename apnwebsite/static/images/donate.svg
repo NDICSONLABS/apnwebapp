@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40.685074mm"
+   height="14.301825mm"
+   viewBox="0 0 40.685074 14.301825"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="donate.png"
+   inkscape:export-xdpi="323.36841"
+   inkscape:export-ydpi="323.36841"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-45.050227,-56.357337)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#800000;stroke-width:0.223573"
+       x="55.346176"
+       y="65.261459"
+       id="text113"><tspan
+         sodipodi:role="line"
+         id="tspan111"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#800000;stroke-width:0.223573"
+         x="55.346176"
+         y="65.261459">Donate</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#800000;stroke-width:0.356394;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1624"
+       width="40.328678"
+       height="13.945431"
+       x="45.228424"
+       y="56.535534"
+       ry="6.030457" />
+  </g>
+</svg>
